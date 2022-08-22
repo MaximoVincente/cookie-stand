@@ -1,0 +1,2 @@
+'use strict'; //strict syntax
+
