@@ -8,7 +8,7 @@ let seattle = {
   avgCS: 6.3,
   custPHArray: [],
   cookiesPHArray: [],
-  // cookiesSold: 0,
+  cookiesSold: 0,
 
   customersPH: function() {
     for (let i = 0; i < hours.length; i++){
@@ -18,23 +18,23 @@ let seattle = {
   },
   cookiesSoldPH: function(){
     for (let j = 0; j < hours.length; j++){
-      let hour = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
-      this.cookiesPHArray.push(hour);
-      // this.cookiesSold += amountCookiesSold;
+      let cookiesPH = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
+      this.cookiesPHArray.push(cookiesPH);
+      this.cookiesSold += cookiesPH;
     }
   },
-    list: function () {
+  list: function () {
     this.cookiesSoldPH();
     let listSeattle = document.getElementById(this.name);
     for (let i = 0; i < hours.length; i++) {
       let entry = document.createElement('li');
       entry.textContent = `${hours[i]}: ${this.cookiesPHArray[i]} cookies`;
       listSeattle.appendChild(entry);
-    
+
     }
     let cookies = document.createElement('li');
     cookies.textContent = `Total: ${this.cookiesSold} cookies`;
-    listSeattle.appendChild(total);
+    listSeattle.appendChild(cookies);
   }
 };
 
@@ -47,6 +47,7 @@ let tokyo = {
   minCustPH:3,
   maxCustPH: 24,
   avgCS: 1.2,
+  cookiesSold: 0,
 
   tokyoCustPHArray: [],
   tokyoCookiesPHArray: [],
@@ -58,11 +59,26 @@ let tokyo = {
   },
   tokyoCookiesSoldPH: function() {
     for (let j = 0; j < hours.length; j++) {
-      let hour = Math.floor(this.tokyoCustPHArray[j] * this.avgCS) + 1;
-      this.tokyoCookiesPHArray.push(hour);
+      let cookiesPH = Math.floor(this.tokyoCustPHArray[j] * this.avgCS) + 1;
+      this.tokyoCookiesPHArray.push(cookiesPH);
+      this.cookiesSold += cookiesPH;
     }
+  },
+  list: function () {
+    this.tokyoCookiesSoldPH();
+    let listTokyo = document.getElementById(this.name);
+    for (let i = 0; i < hours.length; i++) {
+      let entry = document.createElement('li');
+      entry.textContent = `${hours[i]}: ${this.tokyoCookiesPHArray[i]} cookies`;
+      listTokyo.appendChild(entry);
+
+    }
+    let cookies = document.createElement('li');
+    cookies.textContent = `Total: ${this.cookiesSold} cookies`;
+    listTokyo.appendChild(cookies);
   }
 };
+
 tokyo.tokyoCustomersPH();
 tokyo.tokyoCookiesSoldPH();
 
@@ -72,6 +88,7 @@ let dubai = {name: 'Dubai',
   avgCS: 3.7,
   custPHArray: [],
   cookiesPHArray: [],
+  cookiesSold: 0,
 
   customersPH: function () {
     for (let i = 0; i < hours.length; i++) {
@@ -81,9 +98,23 @@ let dubai = {name: 'Dubai',
   },
   cookiesSoldPH: function () {
     for (let j = 0; j < hours.length; j++) {
-      let hour = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
-      this.cookiesPHArray.push(hour);
+      let cookiesPH = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
+      this.cookiesPHArray.push(cookiesPH);
+      this.cookiesSold += cookiesPH;
     }
+  },
+  list: function () {
+    this.cookiesSoldPH();
+    let listDubai = document.getElementById(this.name);
+    for (let i = 0; i < hours.length; i++) {
+      let entry = document.createElement('li');
+      entry.textContent = `${hours[i]}: ${this.cookiesPHArray[i]} cookies`;
+      listDubai.appendChild(entry);
+
+    }
+    let cookies = document.createElement('li');
+    cookies.textContent = `Total: ${this.cookiesSold} cookies`;
+    listDubai.appendChild(cookies);
   }
 };
 
@@ -97,6 +128,7 @@ let paris = {
   avgCS: 2.3,
   custPHArray: [],
   cookiesPHArray: [],
+  cookiesSold: 0,
 
   customersPH: function () {
     for (let i = 0; i < hours.length; i++) {
@@ -106,9 +138,23 @@ let paris = {
   },
   cookiesSoldPH: function () {
     for (let j = 0; j < hours.length; j++) {
-      let hour = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
-      this.cookiesPHArray.push(hour);
+      let cookiesPH = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
+      this.cookiesPHArray.push(cookiesPH);
+      this.cookiesSold += cookiesPH;
     }
+  },
+  list: function () {
+    this.cookiesSoldPH();
+    let listParis = document.getElementById(this.name);
+    for (let i = 0; i < hours.length; i++) {
+      let entry = document.createElement('li');
+      entry.textContent = `${hours[i]}: ${this.cookiesPHArray[i]} cookies`;
+      listParis.appendChild(entry);
+
+    }
+    let cookies = document.createElement('li');
+    cookies.textContent = `Total: ${this.cookiesSold} cookies`;
+    listParis.appendChild(cookies);
   }
 };
 
@@ -122,6 +168,7 @@ let lima = {
   avgCS: 4.6,
   custPHArray: [],
   cookiesPHArray: [],
+  cookiesSold: 0,
 
   customersPH: function () {
     for (let i = 0; i < hours.length; i++) {
@@ -131,9 +178,23 @@ let lima = {
   },
   cookiesSoldPH: function () {
     for (let j = 0; j < hours.length; j++) {
-      let hour = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
-      this.cookiesPHArray.push(hour);
+      let cookiesPH = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
+      this.cookiesPHArray.push(cookiesPH);
+      this.cookiesSold += cookiesPH;
     }
+  },
+  list: function () {
+    this.cookiesSoldPH();
+    let listLima = document.getElementById(this.name);
+    for (let i = 0; i < hours.length; i++) {
+      let entry = document.createElement('li');
+      entry.textContent = `${hours[i]}: ${this.cookiesPHArray[i]} cookies`;
+      listLima.appendChild(entry);
+
+    }
+    let cookies = document.createElement('li');
+    cookies.textContent = `Total: ${this.cookiesSold} cookies`;
+    listLima.appendChild(cookies);
   }
 };
 
@@ -141,3 +202,7 @@ lima.customersPH();
 lima.cookiesSoldPH();
 
 seattle.list();
+tokyo.list();
+dubai.list();
+paris.list();
+lima.list();
