@@ -10,14 +10,14 @@ let seattle = {
   cookiesPHArray: [],
   cookiesSold: 0,
 
-  customersPH: function() {
-    for (let i = 0; i < hours.length; i++){
+  customersPH: function () {
+    for (let i = 0; i < hours.length; i++) {
       let oneHour = Math.floor(Math.random() * (this.maxCustPH - this.minCustPH)) + 1;
       this.custPHArray.push(oneHour);
     }
   },
-  cookiesSoldPH: function(){
-    for (let j = 0; j < hours.length; j++){
+  cookiesSoldPH: function () {
+    for (let j = 0; j < hours.length; j++) {
       let cookiesPH = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
       this.cookiesPHArray.push(cookiesPH);
       this.cookiesSold += cookiesPH;
@@ -44,20 +44,20 @@ seattle.cookiesSoldPH();
 
 let tokyo = {
   name: 'Tokyo',
-  minCustPH:3,
+  minCustPH: 3,
   maxCustPH: 24,
   avgCS: 1.2,
   cookiesSold: 0,
 
   tokyoCustPHArray: [],
   tokyoCookiesPHArray: [],
-  tokyoCustomersPH: function() {
+  tokyoCustomersPH: function () {
     for (let i = 0; i < hours.length; i++) {
       let oneHour = Math.floor(Math.random() * (this.maxCustPH - this.minCustPH)) + 1;
       this.tokyoCustPHArray.push(oneHour);
     }
   },
-  tokyoCookiesSoldPH: function() {
+  tokyoCookiesSoldPH: function () {
     for (let j = 0; j < hours.length; j++) {
       let cookiesPH = Math.floor(this.tokyoCustPHArray[j] * this.avgCS) + 1;
       this.tokyoCookiesPHArray.push(cookiesPH);
@@ -82,7 +82,8 @@ let tokyo = {
 tokyo.tokyoCustomersPH();
 tokyo.tokyoCookiesSoldPH();
 
-let dubai = {name: 'Dubai',
+let dubai = {
+  name: 'Dubai',
   minCustPH: 11,
   maxCustPH: 38,
   avgCS: 3.7,
