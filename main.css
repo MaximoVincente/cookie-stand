@@ -1,6 +1,67 @@
 body{
-    background-color: salmon;
+    background-color: rgb(223, 205, 203);
 }
 h1{
+    margin: 0px;
+    margin-bottom: 20px;
+    background-color: rgb(228, 85, 70);
+    border-radius: 29px;
+    font-size: 60px;
+    text-align: center;
     font-family: 'Noto Sans', sans-serif;
+}
+
+a{
+    padding: 9px;
+    margin-left: 15px;
+    font-family: 'Noto Sans',sans-serif;
+    color: black;
+    background-color: rgb(228, 85, 70);
+    border-radius: 29px;
+}
+
+.salmon{
+    border: solid;
+    margin-top: 50px;
+    border-radius: 29px;
+
+}
+
+.salmon h3{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 50px;
+}
+
+.salmon img{
+    width: 600px;
+    height: auto;
+    margin-left: 160px;
+
+}
+
+.salmon ul{
+    line-height: 25px;
+    margin-left: 10px;
+    margin-bottom: 70px;
+}
+
+.salmon li{
+    margin-top: 20px;
+    
+}
+
+.salmon p{
+    margin-top: 70px;
+    line-height: 25px;
+    padding: 20px;
+}
+
+.salmon h4{
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
 }
