@@ -37,8 +37,6 @@ let seattle = {
     listSeattle.appendChild(cookies);
   }
 };
-
-
 seattle.customersPH();
 seattle.cookiesSoldPH();
 
@@ -78,7 +76,6 @@ let tokyo = {
     listTokyo.appendChild(cookies);
   }
 };
-
 tokyo.tokyoCustomersPH();
 tokyo.tokyoCookiesSoldPH();
 
@@ -118,7 +115,6 @@ let dubai = {
     listDubai.appendChild(cookies);
   }
 };
-
 dubai.customersPH();
 dubai.cookiesSoldPH();
 
@@ -158,7 +154,6 @@ let paris = {
     listParis.appendChild(cookies);
   }
 };
-
 paris.customersPH();
 paris.cookiesSoldPH();
 
@@ -198,7 +193,6 @@ let lima = {
     listLima.appendChild(cookies);
   }
 };
-
 lima.customersPH();
 lima.cookiesSoldPH();
 
