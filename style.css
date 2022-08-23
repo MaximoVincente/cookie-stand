@@ -4,12 +4,34 @@ body{
 
 h1{
     font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+a {
+    padding: 9px;
+    margin-left: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    background-color: rgb(228, 85, 70);
+    border-radius: 29px;
 }
 
 ul{
     font-family: sans-serif;
+    display: inline-flex;
+    list-style: none;
 }
 
 h2{
     font-family: 'Noto Sans', sans-serif;
+}
+
+div{
+    display: inline-block;
+    margin-top: 40px;
+    
+}
+
+li{
+    padding: 8px;
+    
 }
