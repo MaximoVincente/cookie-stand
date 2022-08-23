@@ -8,6 +8,7 @@ let seattle = {
   avgCS: 6.3,
   custPHArray: [],
   cookiesPHArray: [],
+  // cookiesSold: 0,
 
   customersPH: function() {
     for (let i = 0; i < hours.length; i++){
@@ -19,10 +20,25 @@ let seattle = {
     for (let j = 0; j < hours.length; j++){
       let hour = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
       this.cookiesPHArray.push(hour);
+      // this.cookiesSold += amountCookiesSold;
     }
+  },
+    list: function () {
+    this.cookiesSoldPH();
+    let listSeattle = document.getElementById(this.name);
+    for (let i = 0; i < hours.length; i++) {
+      let entry = document.createElement('li');
+      entry.textContent = `${hours[i]}: ${this.cookiesPHArray[i]} cookies`;
+      listSeattle.appendChild(entry);
+    
+    }
+    let cookies = document.createElement('li');
+    cookies.textContent = `Total: ${this.cookiesSold} cookies`;
+    listSeattle.appendChild(total);
   }
-
 };
+
+
 seattle.customersPH();
 seattle.cookiesSoldPH();
 
@@ -70,6 +86,7 @@ let dubai = {name: 'Dubai',
     }
   }
 };
+
 dubai.customersPH();
 dubai.cookiesSoldPH();
 
@@ -94,6 +111,7 @@ let paris = {
     }
   }
 };
+
 paris.customersPH();
 paris.cookiesSoldPH();
 
@@ -118,5 +136,8 @@ let lima = {
     }
   }
 };
+
 lima.customersPH();
 lima.cookiesSoldPH();
+
+seattle.list();
