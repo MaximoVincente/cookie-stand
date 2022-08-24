@@ -61,16 +61,16 @@ table{
 tr{
     border: 2px solid black;
     text-align: center;
-    font-size: large;
+    font-size: larger;
     padding: 20px;
     color: black;
 }
 
 
 td{
-    border: 2px solid black;
-    font-weight: 700;
-    font-size: larger;
+    border: thin solid black;
+    font-weight: 900;
+    font-size: x-large;
     padding: 4px;
     padding-left: 20px;
     padding-right: 20px;
