@@ -1,37 +1,80 @@
 body{
-    background-color: rgb(143, 195, 207);
+    background-color: rgb(19, 33, 36);
 }
 
 h1{
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+    background-color: rgb(152, 152, 152);
+    padding: 60px;
+    border-radius: 11px;
+    font-size: xxx-large;
 }
 a {
     padding: 9px;
-    margin-left: 15px;
+    display: block;
     font-family: 'Noto Sans', sans-serif;
     color: black;
-    background-color: rgb(228, 85, 70);
+    background-color: rgb(222, 185, 180);
+    border-radius: 11px;
+    padding: 30px;
+    font-size: xxx-large;
+    font-weight: 900;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+table{
+
+
+    margin-left: 11px;
+    width: auto;
+    border: 2px solid black;
     border-radius: 29px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(152, 152, 152);
+    display: block;
+    float: right;
 }
 
-ul{
-    font-family: sans-serif;
-    display: inline-flex;
-    list-style: none;
+tr{
+    border: 2px solid black;
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+    color: black;
 }
 
-h2{
-    font-family: 'Noto Sans', sans-serif;
-}
 
-div{
-    display: inline-block;
-    margin-top: 40px;
-    
-}
-
-li{
-    padding: 8px;
-    
+td{
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: larger;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    height:80px;
+    width: 150px;
 }
