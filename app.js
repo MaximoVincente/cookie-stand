@@ -92,6 +92,35 @@ for (let location of stores){
   location.displayRow();
 }
 
-function footer(){
-  
+function footerRow(){
+
+  let tFoot = document.getElementById('totalSales');
+  let row = document.createElement('tr');
+  let head = document.createElement('th');
+  head.textContent = 'Total Sales Per Hour';
+  row.appendChild(head);
+  tFoot.appendChild(row);
+
+  for (let hour in hours){
+    let salesHour = 0;
+    let cell = document.createElement('td');
+
+    for (let store in stores){
+      let currentStore = stores[store];
+      let currentSales = currentStore.cookiesPHArray[hour];
+      salesHour += currentSales;
+    }
+    cell.textContent = salesHour;
+    row.appendChild(cell);
+  }
+
+  let cell = document.createElement('td');
+  let totals = 0;
+  for (let store of stores){
+    totals += store.cookiesTotal;
+  }
+  cell.textContent = totals;
+  row.appendChild(cell);
 }
+
+footerRow();
