@@ -59,6 +59,7 @@ CookiesSold.prototype.custPH = function(){
 };
 
 CookiesSold.prototype.cookiesPH = function() {
+  this.custPH();
   for (let j = 0; j < hours.length; j++) {
     let cookiesPH = Math.floor(this.custPHArray[j] * this.avgCS) + 1;
     this.cookiesPHArray.push(cookiesPH);
@@ -66,30 +67,31 @@ CookiesSold.prototype.cookiesPH = function() {
   }
 };
 
-stores[0].custPH();
-stores[0].cookiesPH();
-stores[1].custPH();
-stores[1].cookiesPH();
-stores[2].custPH();
-stores[2].cookiesPH();
-stores[3].custPH();
-stores[3].cookiesPH();
-stores[4].custPH();
-stores[4].cookiesPH();
-console.log(stores);
-
-let tBody = document.getElementById('tBody');
-
-for (let location of stores){
+CookiesSold.prototype.displayRow = function(){
+  this.cookiesPH();
   let row = document.createElement('tr');
   let storeName = document.createElement('td');
-  storeName.textContent = location.name;
+  storeName.textContent = this.name;
   row.appendChild(storeName);
 
-  for (let sale of location.cookiesPHArray){
+  for (let sale of this.cookiesPHArray) {
     let cell = document.createElement('td');
     cell.textContent = sale;
     row.appendChild(cell);
   }
+
+  let total = document.createElement('td');
+  total.textContent = this.cookiesTotal;
+  row.appendChild(total);
   tBody.appendChild(row);
+};
+
+let tBody = document.getElementById('tBody');
+
+for (let location of stores){
+  location.displayRow();
+}
+
+function footer(){
+  
 }

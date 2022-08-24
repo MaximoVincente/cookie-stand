@@ -47,6 +47,7 @@ table{
 
 
     margin-left: 11px;
+    margin-right: auto;
     width: auto;
     border: 2px solid black;
     border-radius: 29px;
@@ -55,7 +56,8 @@ table{
     padding-right: 15px;
     background-color: rgb(152, 152, 152);
     display: block;
-    float: right;
+    float: left;
+    display: block;
 }
 
 tr{
