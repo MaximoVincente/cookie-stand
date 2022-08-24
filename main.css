@@ -16,10 +16,14 @@ h1{
 a{
     padding: 9px;
     margin-left: 15px;
+    margin-top: -47px;
     font-family: 'Noto Sans',sans-serif;
     color: black;
-    background-color: rgb(223, 207, 205);
+    background-color: rgb(215, 184, 180);
     border-radius: 29px;
+    border: 2px solid black;
+    position: fixed;
+    
 
 }
 
