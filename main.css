@@ -1,11 +1,14 @@
 body{
-    background-color: rgb(223, 205, 203);
+    background-color: rgb(248, 245, 245);
 }
 h1{
-    margin: 0px;
+    margin: auto;
+    height: 150px;
+    padding-top: 30px;
     margin-bottom: 20px;
-    background-color: rgb(228, 85, 70);
+    background-color: rgb(222, 185, 180);
     border-radius: 29px;
+    border: solid;
     font-size: 60px;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
@@ -16,8 +19,25 @@ a{
     margin-left: 15px;
     font-family: 'Noto Sans',sans-serif;
     color: black;
-    background-color: rgb(228, 85, 70);
+    background-color: rgb(222, 185, 180);
     border-radius: 29px;
+    border: solid;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 .salmon{
@@ -25,19 +45,23 @@ a{
     width: auto;
     margin-top: 50px;
     border-radius: 29px;
+    background-color: rgb(223, 207, 205);
+
 
 }
 
 .salmon h3{
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
-    font-size: xx-large;
+    font-size: xxx-large;
     margin-bottom: 50px;
 }
 
 .salmon img{
-    width: 600px ;
-    margin-left: 50px;
+    display: block;
+    margin-right: auto;
+    width: 70% ;
+    margin-left: auto;
 
 
 }
@@ -57,6 +81,7 @@ a{
     margin-top: 70px;
     line-height: 25px;
     padding: 20px;
+    font-size: large;
 }
 
 .salmon h4{
