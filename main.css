@@ -24,7 +24,8 @@ h1{
 
 .header img{
     width: 200px;
-    margin-left: 50px;
+    margin-left: 35px;
+    
 }
 
 a{
@@ -122,17 +123,15 @@ footer{
     font-size: larger;
     border-radius: 29px;
     border: 2px solid;
-    text-align: right;
     
 }
 
 footer img{
     width: 300px;
-    margin-right: 300px;
 
 }
 
 footer p{
-    text-align: center;
     display: inline-block;
+
 }
