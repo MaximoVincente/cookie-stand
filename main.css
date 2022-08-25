@@ -51,7 +51,6 @@ a{
     font-size: xxx-large;
     padding-top: 30px;
     padding-bottom: 20px;
-    margin-bottom: 0px;
     border-top-left-radius: 29px;
     border-top-right-radius: 29px;
     background-color: rgb(157, 109, 102);
@@ -60,10 +59,10 @@ a{
 .salmon img{
     display: block;
     margin-right: auto;
-    width: 100% ;
+    width: 700px;
+    height: 500px;
     margin-left: auto;
-    border-bottom-left-radius: 29px;
-    border-bottom-right-radius: 29px;
+    border-radius: 29px;
 }
 
 .salmon p{
@@ -73,6 +72,27 @@ a{
     font-size: large;
     font-weight: 600;
     border-bottom: thin solid;
+}
+
+.hero img{
+    float: right;
+    margin-right: 10px;
+    margin-top: -30px;
+}
+
+.hero h4{
+    font-size: xx-large;
+    margin: 0px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-style: italic;
+}
+
+.hero p{
+    margin-top: -20px;;
+    padding: 10px;
 }
 
 .sub-section {
