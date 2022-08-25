@@ -1,16 +1,30 @@
 body{
-    background-color: rgb(21, 19, 19);
+    background-color: rgb(175, 137, 132);
 }
-h1{
-    margin: auto;
-    height: 150px;
-    padding-top: 30px;
-    margin-bottom: 20px;
+
+header {
+    width: 100%;
+    display: inline-block;
     background-color: rgb(223, 207, 205);
     border-radius: 29px;
-    font-size: 60px;
+    border: 2px solid;
+
+}
+
+h1{
+    width: 60%;
+    border-radius: 29px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 80px;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
+}
+
+.header img{
+    width: 200px;
+    margin-left: 50px;
 }
 
 a{
@@ -48,7 +62,8 @@ a:active {
     width: auto;
     margin-top: 50px;
     border-radius: 29px;
-    background-color: rgb(223, 207, 205);
+    border: 2px solid;
+    background-color: rgb(250, 244, 244);
 
 
 }
@@ -57,8 +72,7 @@ a:active {
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
     font-size: xxx-large;
-    margin-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .salmon img{
@@ -66,9 +80,7 @@ a:active {
     margin-right: auto;
     width: 70% ;
     margin-left: auto;
-    margin-top: 100px;
-
-
+    border-radius: 29px;
 }
 
 .salmon ul{
@@ -86,7 +98,7 @@ a:active {
 }
 
 .salmon p{
-    margin-top: 70px;
+    margin-top: 20px;
     line-height: 35px;
     padding: 20px;
     font-size: large;
@@ -101,7 +113,26 @@ a:active {
 }
 
 footer{
-    padding: 20px;
-    color: rgb(223, 207, 205);
+    margin-top: 5px;
+    padding: 10px;
+    height: 50%;
+    width: 98%;
+    background-color: white;
+    color: rgb(61, 42, 40);
     font-size: larger;
+    border-radius: 29px;
+    border: 2px solid;
+    text-align: right;
+    
+}
+
+footer img{
+    width: 300px;
+    margin-right: 300px;
+
+}
+
+footer p{
+    text-align: center;
+    display: inline-block;
 }
