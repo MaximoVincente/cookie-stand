@@ -122,5 +122,4 @@ function footerRow(){
   cell.textContent = totals;
   row.appendChild(cell);
 }
-
 footerRow();
