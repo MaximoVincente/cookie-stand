@@ -3,6 +3,7 @@ let hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:0
 
 let stores = [];
 
+
 function CookiesSold(name, maxCustPH, minCustPH, avgCS){
   this.name = name;
   this.maxCustPH = maxCustPH;
@@ -16,6 +17,7 @@ function CookiesSold(name, maxCustPH, minCustPH, avgCS){
 function cookieNumbers (stats){
   stores.push(new CookiesSold(stats.name, stats.maxCustPH, stats.minCustPH, stats.avgCS));
 }
+
 cookieNumbers({
   name: 'Seattle',
   maxCustPH: 65,
@@ -123,3 +125,35 @@ function footerRow(){
   row.appendChild(cell);
 }
 footerRow();
+
+
+
+
+
+let formEl = document.getElementById('new-location');
+
+let newStore = [];
+
+
+
+formEl.addEventListener('submit', function (event) {
+  event.preventDefault();
+  console.log(event);
+  console.log(event.target);
+  let { location, max_cust, min_cust, avg_cs } = event.target;
+
+  let stand = new CookiesSold(
+    location.value,
+    max_cust.value,
+    min_cust.value,
+    avg_cs.value);
+
+  newStore.push(stand);
+
+  let storesEl = document.getElementById('new-location');
+  storesEl.innerHTML = '';
+  for (let stand of newStore) {
+    stand.cookiesPH();
+    console.log(stand);
+  }
+});
