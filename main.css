@@ -119,6 +119,7 @@ a{
     display: inline-block;
     margin-left: 138px;
     border-radius: 29px;
+    mix-blend-mode: multiply;
 }
 
 .storehours h4{
@@ -147,10 +148,11 @@ footer{
     padding: 10px;
     height: 50%;
     width: 98%;
-    background-color: rgb(11, 6, 5);
-    color: rgb(223, 207, 205);
+    background-color: rgb(223, 207, 205);
+    color: rgb(108, 75, 70);
     font-size: larger;
     display: inline-box;
+    border-radius: 29px;
     }
 
 footer img{
@@ -159,6 +161,7 @@ footer img{
     margin-bottom: -50px;
     margin-top: 80px;
     margin-left: 11px;
+    mix-blend-mode: multiply;
 }
 
 footer p{

@@ -127,11 +127,28 @@ function footerRow(){
 footerRow();
 
 
-
-
-
 let formEl = document.getElementById('new-location');
 let newStore = [];
+
+formEl.addEventListener('submit', function (event) {
+  event.preventDefault();
+  let { location, max_cust, min_cust, avg_cs } = event.target;
+
+  let stand = new CookiesSold(
+    location.value,
+    max_cust.value,
+    min_cust.value,
+    avg_cs.value);
+
+  newStore.push(stand);
+
+  let storesEl = document.getElementById('new-location');
+  storesEl.innerHTML = '';
+  for (let stand of newStore) {
+    stand.cookiesPH();
+    stand.display();
+  }
+});
 
 CookiesSold.prototype.display = function () {
   let row = document.createElement('tr');
@@ -154,49 +171,4 @@ for (let location of newStore){
   location.displayRow();
 }
 
-function newFooter() {
 
-  for (let hour in hours) {
-    let salesHour = 0;
-    let cell = document.createElement('td');
-
-    for (let store in stores) {
-      let currentStore = stores[store];
-      let currentSales = currentStore.cookiesPHArray[hour];
-      salesHour += currentSales;
-    }
-    cell.textContent = salesHour;
-  }
-
-  let cell = document.createElement('td');
-  let totals = 0;
-  for (let store of stores) {
-    totals += store.cookiesTotal;
-  }
-  cell.textContent = totals;
-}
-newFooter();
-
-formEl.addEventListener('submit', function (event) {
-  event.preventDefault();
-  console.log(event);
-  console.log(event.target);
-  let { location, max_cust, min_cust, avg_cs } = event.target;
-
-  let stand = new CookiesSold(
-    location.value,
-    max_cust.value,
-    min_cust.value,
-    avg_cs.value);
-
-  newStore.push(stand);
-  console.log(newStore);
-
-  let storesEl = document.getElementById('new-location');
-  storesEl.innerHTML = '';
-  for (let stand of newStore) {
-    stand.cookiesPH();
-    stand.display();
-    console.log(stand);
-  }
-});
