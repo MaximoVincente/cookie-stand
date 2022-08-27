@@ -1,9 +1,14 @@
 body{
     background-color: rgb(11, 6, 5);
+    width: 1540px;
+    height: 540px;
+    margin: auto;
 }
 
 header {
-    width: 100%;
+    width: 96%;
+    padding: 30px;
+    margin-top: 10px;
     display: inline-block;
     background-color: rgb(215, 184, 180);
     border-radius: 29px;
@@ -22,20 +27,26 @@ h1{
 
 .header img{
     width: 200px;
-    margin-left: 35px;
+    margin-left: 56px;
     }
 
 a{
     padding: 9px;
     margin-left: 15px;
-    margin-top: -47px;
+    margin-top: -68px;
     font-family: 'Noto Sans',sans-serif;
     color: rgb(26, 13, 11);
     background-color: rgb(215, 184, 180);
     border-radius: 29px;
-    border: 2px solid black;
+    border: 4px solid rgb(157, 109, 102);
     position: fixed;
     text-decoration: none;
+    font-size: x-large;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: rgb(157, 109, 102);
 }
 
 .salmon{
@@ -49,6 +60,7 @@ a{
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
     font-size: xxx-large;
+    margin-top: 75px;
     padding-top: 30px;
     padding-bottom: 20px;
     border-top-left-radius: 29px;
@@ -59,8 +71,8 @@ a{
 .salmon img{
     display: block;
     margin-right: auto;
-    width: 700px;
-    height: 500px;
+    width: 1000px;
+    height: 700px;
     margin-left: auto;
     border-radius: 29px;
 }
@@ -81,9 +93,10 @@ a{
 }
 
 .hero h4{
-    font-size: xx-large;
+    font-size: xxx-large;
     margin: 0px;
     margin-top: -10px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     padding-left: 10px;
     line-height: 50px;
@@ -145,10 +158,9 @@ a{
 
 footer{
     margin-top: 5px;
-    padding: 10px;
-    height: 50%;
-    width: 98%;
-    background-color: rgb(223, 207, 205);
+    height: 40%;
+    width: 100%;
+    background-color: rgb(215, 184, 180);
     color: rgb(108, 75, 70);
     font-size: larger;
     display: inline-box;
@@ -159,11 +171,13 @@ footer img{
     width: 300px;
     border-radius: 29px;
     margin-bottom: -50px;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 11px;
     mix-blend-mode: multiply;
 }
 
 footer p{
     text-align: right;
+    margin-right: 20px;
+    font-size: xx-large;
 }

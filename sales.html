@@ -5,8 +5,10 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <header>
     <a href="index.html">Salmon Cookies</a>
     <h1>Daily Cookies Sold Per Location</h1>
+    </header>
 
     <table>
         <thead>
@@ -37,20 +39,22 @@
     </table>
         <form id="new-location">
             <fieldset>
-                <legend>Add New Stand</legend>
+                <legend>Add New Stand Location</legend>
                 <section>
                     <label>Location</label>
                     <input name="location" type="text">
                 </section>
-                <section>
+                <section class="min-max">
+                <section class="max">
                     <label>Maximum Customer Per Hour</label>
                     <input name="max_cust" type="text">
                 </section>
-                <section>
+                <section class="min">
                     <label>Minimum Customer Per Hour</label>
                     <input name="min_cust" type="text">
                 </section>
-                <section>
+                </section>
+                <section class="avgCS">
                     <label>Average Cookie Sale</label>
                     <input name="avg_cs" type="text">
                 </section>

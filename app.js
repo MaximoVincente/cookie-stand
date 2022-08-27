@@ -170,5 +170,3 @@ let tBod = document.getElementById('tBody');
 for (let location of newStore){
   location.displayRow();
 }
-
-
